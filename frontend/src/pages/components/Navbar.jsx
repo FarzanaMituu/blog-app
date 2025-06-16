@@ -3,7 +3,7 @@ import { Link} from 'react-router-dom'
 import logo from "../../images/logo1.gif";
 const Navbar = () => {
   return (
-
+//navbar section
     <div className="navbar flex items-center justify-between h-[100px] px-[100px] bg-[#0c0c0c] overflow-hidden">
       <div className="logo">
         <img className='w-[180px]' src={logo} alt="" />
