@@ -12,6 +12,8 @@ const Blogs = () => {
            <Blog/>
            <Blog/>
            <Blog/>
+           <Blog/>
+           <Blog/>
         </div>
        </div>
     </>
