@@ -3,6 +3,8 @@ import "./App.CSS";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import NoPage from './pages/NoPage';
+import SingleBlog from './pages/SingleBlog';
+import SignUp from './pages/SignUp';
 const App = () => {
   return (
     <>
@@ -10,6 +12,8 @@ const App = () => {
         <Routes>
 
           <Route path='/' element={<Home />} />
+          <Route path='/signup' element={<SignUp />} />
+          <Route path='/blog/:blogId' element={<SingleBlog />} />
           <Route path="*" element={<NoPage />} />
 
         </Routes>

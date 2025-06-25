@@ -110,3 +110,11 @@ html{
 .blogsCon .blog:hover{
   transform: translateY(-3%);
 }
+
+.inputBox{
+  display: flex;
+  align-items: center;
+  background-color: #0c0c0c;
+  border: 1px solid gray;
+  
+}
