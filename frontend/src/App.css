@@ -113,8 +113,19 @@ html{
 
 .inputBox{
   display: flex;
+  margin-top: 5px;
   align-items: center;
   background-color: #0c0c0c;
-  border: 1px solid gray;
+  border-radius: 5px;
+  border: 1px solid rgb(32, 32, 32);
   
+}
+.inputBox input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
 }
