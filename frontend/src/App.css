@@ -129,3 +129,19 @@ html{
   border-radius: 5px;
   color: #fff;
 }
+
+.inputBox textarea {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  min-height: 100px;
+  resize: vertical;
+  border-radius: 5px;
+  color: #fff;
+}
+
+svg{
+  color:#fff !important;
+}

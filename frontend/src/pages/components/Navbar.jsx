@@ -15,6 +15,12 @@ const Navbar = () => {
         <Link className='navLink'>Blogs</Link>
         <Link className='navLink'>Services</Link>
         <Link className='navLink'>Contact</Link>
+
+        <button onClick={()=>{
+          localStorage.removeItem("token");
+          localStorage.removeItem("isLoggedIn");
+          window.location.href= "/login";
+        }} className='btNormal !bg-red-500 transition-all hover:!bg-red-600"'>Logout</button>
       </div>
     </div>
   )

@@ -1,15 +1,21 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom'
 
-const Blog = () => {
+const Blog = ({ data }) => {
+  const navigate = useNavigate(); 
   return (
     <>
-    <div className="blog">
-        <img className='w-full h-[60%] rounded-lg mb-2' src="https://i.pinimg.com/474x/ce/81/bc/ce81bc80aa88e372c973a612883be83e.jpg" alt="" />
-        <h3>The First Cup of Tea</h3>
-        <p className='text-gray text-[14px] w-[90%] line-clamp-3'>A memory of that first cup of tea that changed the way mornings felt........................</p>
-    </div>
+      <div onClick={()=>{navigate(`/blog/${data._id}`)}} className="blog"> 
+        <img
+          className="w-full h-[60%] rounded-lg mb-2"
+          src={`http://localhost:3000/uploads/${data.image}`}
+          alt="Blog cover"
+        />
+        <h3>{data.title}</h3>
+        <p className="text-gray text-[14px] w-[90%] line-clamp-3">{data.desc}</p>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;
