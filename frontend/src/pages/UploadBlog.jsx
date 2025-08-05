@@ -89,7 +89,7 @@ const UploadBlog = () => {
                                 </div>
 
                                 <div className="inputBox">
-                                    <textarea onChange={(e)=>{setDesc(e.target.value)}} value={desc} placeholder='Enter Descriptin'></textarea>
+                                    <textarea onChange={(e)=>{setDesc(e.target.value)}} value={desc} placeholder='Enter Description'></textarea>
                                 </div>
 
                                 <JoditEditor
